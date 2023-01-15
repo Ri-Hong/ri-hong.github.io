@@ -6,7 +6,7 @@ import { AiOutlineLink } from "react-icons/ai";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 50px 0;
+  margin: 0px 0;
   flex-wrap: wrap;
   justify-content: center;
   // border: 3px solid green;
@@ -21,14 +21,14 @@ export const Project = styled.div`
   flex-basis: 40%;
   flex: 1;
   // border: 3px solid red;
-  margin: 30px 2%;
+  margin: 0px 2% 20px;
   padding: 0;
   flex: 0 1 auto;
 `
 
 export const Image = styled.img`
   width: 90%;
-  height: 250px;
+  height: auto;
   border-radius: 10px;
   vertical-align: middle;
   object-fit: fit;
@@ -42,6 +42,11 @@ export const Links = styled.div`
   justify-content: space-around;
   width: 50%;
   margin: 10px 25% 0 25%;
+  @media screen and (max-width: 500px) {
+    margin: 10px 15% 0 15%;
+    width: 70%;
+
+  }
 `
 
 export const Link = styled.a`
@@ -52,26 +57,34 @@ export const Link = styled.a`
 `
 
 export const Title = styled.h1`
-margin: 10px;
-font-size: 40px;
-
+  margin: 10px;
+  font-size: 40px;
+  @media screen and (max-width: 500px) {
+    font-size: 35px;
+  }
 `
 
 export const Date = styled.p`
-margin: 10px;
-font-size: 24px;
+  margin: 10px;
+  font-size: 24px;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 `
 
 export const Description = styled.p`
   margin: 10px;
   font-size: 24px;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 `
 
 
 export const GithubIcon = styled(SiGithub)`
   color: white;
   font-size: 2.5em;
-  transition: color 2s ease-in-out 0.1s;
+  // transition: color 0.2s ease-in-out 0.1s;
 
   &:hover {
     color: #2AE9E3;
@@ -81,7 +94,7 @@ export const GithubIcon = styled(SiGithub)`
 export const DevpostIcon = styled(SiDevpost)`
   color: white;
   font-size: 2.5em;
-  transition: color 2s ease-in-out 0.1s;
+  // transition: color 0.2s ease-in-out 0.1s;
   
   &:hover {
     color: #2AE9E3;
@@ -91,7 +104,7 @@ export const DevpostIcon = styled(SiDevpost)`
 export const LinkIcon = styled(AiOutlineLink)`
   color: white;
   font-size: 2.5em;
-  transition: color 2s ease-in-out 0.1s;
+  // transition: color 0.2s ease-in-out 0.1s;
   
   &:hover {
     color: #2AE9E3;

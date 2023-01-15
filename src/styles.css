@@ -1,93 +1,84 @@
-.parallax {
-  perspective: 1px;
+body {
+  margin: 0;
+}
+
+.wrapper {
   height: 100vh;
-  overflow-x: hidden;
   overflow-y: auto;
-  z-index: 0;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  /* border: 3px solid green; */
-  /* display: flex;
-  justify-content: center; */
+  overflow-x: hidden;
+  perspective: 10px;
 }
 
-.parallax__group {
-  /* position: relative; */
-  /* height: 100vh; */
-}
-
-.parallax__layer--0 {
-  transform: translateZ(-10px) scale(11);
-  /* border: 3px solid blue; */
-
-}
-.parallax__layer--1 {
-  transform: translateZ(-2.5px) scale(3.5);
-  border: 3px solid blue;
-
-}
-.parallax__layer--name {
-  transform: translateZ(-10px) scale(11);
-}
-.parallax__layer--resume_button {
+header {
+  position: relative;
   display: flex;
   justify-content: center;
-  z-index: 500;
-  transform: translateZ(-2px) scale(3);
-}
-.parallax__layer--2 {
-  transform: translateZ(-2px) scale(3);
-  /* border: 3px solid blue; */
-
-}
-.parallax__layer--3 {
-  transform: translateZ(-1.5px) scale(2.5);
-  /* border: 3px solid blue; */
-
-}
-.parallax__layer--4 {
-  transform: translateZ(-1px) scale(2);
-  /* border: 3px solid blue; */
-
-}
-.parallax__layer--5 {
-  transform: translateZ(-0.5px) scale(1.5);
-  /* border: 3px solid blue; */
-
-}
-.parallax__layer--6 {
-  transform: translateZ(0) scale(1);
-  /* border: 3px solid blue; */
-
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
 }
 
-.parallax__img {
-  width: 100%;
-  height: fit-content;
-  object-fit: cover;
-  display: block;
-  object-position: center top;
-  /* border: 3px solid blue; */
+.layer0 {
+  transform: translateZ(-30px) scale(4);
 }
 
+.layer1 {
+  transform: translateZ(-25px) scale(3.5);
+}
 
-.name {
-  font-size: 100px;
-  color: #FFFFFF;
-  opacity: 0.8;
-  text-align: center;
-  width: 100%;
+.layer2 {
+  transform: translateZ(-20px) scale(3);
+}
+
+.layer3 {
+  transform: translateZ(-15px) scale(2.5);
+  /* overflow-y: visible; */
+}
+
+.layer4 {
+  transform: translateZ(-10px) scale(2);
+}
+
+.layer5 {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.layer6 {
+  transform: translateZ(0);
+  /* border: 3px solid cyan; */
+  /* overflow-y: visible; */
+}
+
+.layer {
   position: absolute;
-  top: 60px;
-  /* border: 3px solid red; */
-  text-shadow: rgba(241,164,110,0.8) 0px 0px 35px;
-  /* background: #000000; */
-  z-index: 100000;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  /* border: 3px solid cyan; */
+
+}
+
+.title {
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;;
+}
+
+section {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.fade {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(203,203,203,0) 92%, rgba(13,14,24,1) 100%, rgba(13,14,24,1) 100%);
+  height: 100vh;
+  position: absolute;
+  /* border: 3px solid blue; */
 }
 
 .navBtn {
@@ -96,7 +87,7 @@
   font-weight: bold;
   position: absolute;
   padding: 10px 20px;
-
+  margin-top: 300px;
   /* background: rgba(255, 255, 255, 0.17); */
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -106,41 +97,31 @@
 
   /* border: 2px solid rgb(94, 94, 94); */
   color: #ffffff;
-  top: 300px;
   text-shadow: rgba(241,164,110,0.8) 0px 0px 35px;
   z-index: 100000;
-}
-
-@media only screen and (min-width: 1700px) {
-  .name {
-    top: 70px;
-  }
-  .navBtn {
-    top: 330px;
-  }
-}
-
-@media only screen and (min-width: 1900px) {
-  .name {
-    top: 100px;
-  }
-  .navBtn {
-    top: 370px;
-  }
 }
 
 .navBtn:hover{
   color: #000000;
   background-color: rgba(255, 255, 255, 0.5);
   transition: color 0.2s, background-color 0.2s;
-
 }
 
-#landing_layer{
+.contentSection {
+  /* padding-top: 10vh; */
 }
 
-#content_layer{
-  transform: translateZ(0) ;
-  background-size: cover;
-  /* border: 3px solid cyan; */
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 5rem;
+  }
+  .contentSection {
+    /* padding-top: 5vh; */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 4rem;
+  }
 }

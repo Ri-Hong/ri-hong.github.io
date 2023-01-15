@@ -9,7 +9,7 @@ import layer2 from './images/Layer2.png';
 import layer3 from './images/Layer3.png';
 import layer4 from './images/Layer4.png';
 import layer5 from './images/Layer5.png';
-import layer6 from './images/Layer6v4.png';
+import layer6 from './images/Layer6.png';
 
 //Components
 import Header from './components/Header/Header'
@@ -24,45 +24,21 @@ import resume from './Resumes/resume.pdf'
 function App() {
 
   return (
-    <div>
-
-      <div className="parallax">
-        {/* <Navbar></Navbar> */}
-
-        {/* Parallax Landing */}
-        <div className="parallax__group" id="landing_layer">
-          <div className="parallax__layer parallax__layer--0">
-            <img className="parallax__img" src={layer0} alt="" draggable="false"></img>
-          </div>
-          <div className="parallax__layer parallax__layer--1">
-            <img className="parallax__img" src={layer1} alt="" draggable="false"></img>
-          </div>
-          <div className="parallax__layer parallax__layer--name">
-            <h1 className="name">Ri Hong</h1>
-          </div>
-          <div className="parallax__layer parallax__layer--resume_button">
-            <a className="navBtn" href={resume} target="_blank" rel="noreferrer">Resume</a>
-          </div>
-          <div className="parallax__layer parallax__layer--2">
-            <img className="parallax__img" src={layer2} alt="" draggable="false"></img>
-          </div>
-          <div className="parallax__layer parallax__layer--3">
-            <img className="parallax__img" src={layer3} alt="" draggable="false"></img>
-          </div>
-          <div className="parallax__layer parallax__layer--4">
-            <img className="parallax__img" src={layer4} alt="" draggable="false"></img>
-          </div>
-          <div className="parallax__layer parallax__layer--5">
-            <img className="parallax__img" src={layer5} alt="" draggable="false"></img>
-          </div>
-          <div className="parallax__layer parallax__layer--6">
-            <img className="parallax__img" src={layer6} alt="" draggable="false"></img>
-          </div>
-        </div>
-        <div style={{height: "135vh"}}></div>
-
-        {/* Content */}
-        {/* <div className="parallax__group" id="content_layer" style={{backgroundImage: `url(${background})`, border: '3px solid red'}}>
+    <body>
+      <div class="wrapper">
+        <header>
+          <img src={layer0} className="layer0 layer" alt="" draggable="false"></img>
+          <img src={layer1} className="layer1 layer" alt="" draggable="false"></img>
+          <img src={layer2} className="layer2 layer" alt="" draggable="false"></img>
+          <img src={layer3} className="layer3 layer" alt="" draggable="false"></img>
+          <img src={layer4} className="layer4 layer" alt="" draggable="false"></img>
+          <img src={layer5} className="layer5 layer" alt="" draggable="false"></img>
+          <img src={layer6} className="layer6 layer" alt="" draggable="false"></img>
+          <div className="fade layer6 layer"></div>
+          <h1 class="title">Ri Hong</h1>
+          <a className="navBtn" href={resume} target="_blank" rel="noreferrer">Resume</a>
+        </header>
+         <div className="contentSection" style={{backgroundImage: `url(${background})`}}>
           <Header text="About Me"></Header>
           <AboutMe></AboutMe>
           <Header text="Skills"></Header>
@@ -72,11 +48,10 @@ function App() {
           <Header text="Projects"></Header>
           <Projects></Projects>
           <Footer></Footer>
-        </div> */}
-
+        </div>
       </div>
+    </body>
 
-    </div>
   );
 }
 

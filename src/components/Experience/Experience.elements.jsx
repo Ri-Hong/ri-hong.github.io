@@ -5,11 +5,19 @@ import styled from 'styled-components'
 export const Section = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 50px 10% 100px;
+  margin: 30px 10% 0px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? 'row' : 'row-reverse')};
-  // border: 3px solid green;
+  // border: 3px solid blue;
+  margin-top: ${({ imgStart }) => (imgStart ? '80px' : '0')};
+
+  @media screen and (max-width: 1300px) {
+    margin-top: ${({ imgStart }) => (imgStart ? '40px' : '0')};
+  }
+  @media screen and (max-width: 500px) {
+    margin: 30px 5% 0px;
+  }
 `
 
 export const SectionColumn = styled.div`
@@ -17,7 +25,6 @@ export const SectionColumn = styled.div`
   max-width: 50%;
   flex-basis: 50%;
   justify-content: center;
-
   // border: 3px solid green;
 
   @media screen and (max-width: 960px) {
@@ -51,24 +58,39 @@ export const TextSection = styled.div`
 export const Title = styled.h1`
   margin: 0;
   font-size: 40px;
-
+  @media screen and (max-width: 500px) {
+    font-size: 35px;
+  }
 `
 
 export const Company = styled.h2`
   margin: 0;
   font-size: 32px;
-
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+  }
 `
 
 export const Time = styled.p`
   margin: 0;
   font-size: 24px;
-
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
 `
 
 export const Description = styled.p`
   margin: 30px 0 0 0;
   font-size: 24px;
   // border: 3px solid green; 
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 `
 

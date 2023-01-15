@@ -7,5 +7,11 @@ export const HeaderText = styled.h1`
   font-weight: normal;
   font-weight: 700;
   // border: 3px solid red;
-  margin: 100px 0 20px 0;
+  padding: 80px 0 30px 0;
+  margin: 0;
+  
+  @media screen and (max-width: 500px) {
+    font-size: 50px;
+    padding: 50px 0 10px 0;
+  }
 `
