@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fce06926.css",
+    "main.js": "/static/js/main.30610086.js",
+    "static/media/background.png": "/static/media/background.60a820e3594a156ecdb4.png",
+    "static/media/smartDoorLock.png": "/static/media/smartDoorLock.3933c3917d8378dfa798.png",
+    "static/media/foodtastic.png": "/static/media/foodtastic.003963bbc53daf3fa30a.png",
+    "static/media/Layer3.png": "/static/media/Layer3.0ff7c3c83fbdb35b819c.png",
+    "static/media/smartdoorlockapp.png": "/static/media/smartdoorlockapp.753f06ed5a632d8cb2b3.png",
+    "static/media/Layer0.png": "/static/media/Layer0.ff823b3f1a2bed988ff4.png",
+    "static/media/fluencity.png": "/static/media/fluencity.bdbf76e8ee9abb2210ed.png",
+    "static/media/Layer1.png": "/static/media/Layer1.99757a0f16440cfc901b.png",
+    "static/media/Layer6.png": "/static/media/Layer6.70cbb3e6b35e25d7c50a.png",
+    "static/media/Layer2.png": "/static/media/Layer2.60a4994d76b17a6306fa.png",
+    "static/media/bcsc.png": "/static/media/bcsc.a4ccd899be92bb30f994.png",
+    "static/media/Layer5.png": "/static/media/Layer5.675bcc66f69a5efa8a72.png",
+    "static/media/Layer4.png": "/static/media/Layer4.f5034b7c1fbd9b6acaf1.png",
+    "static/media/BCSCLogo.png": "/static/media/BCSCLogo.05d510f36fc7d42253fd.png",
+    "static/media/MicrogreenLogo.png": "/static/media/MicrogreenLogo.882d9fd4747097dfd5f3.png",
+    "static/media/resume.pdf": "/static/media/resume.899ee5fa3da3dab0e391.pdf",
+    "index.html": "/index.html",
+    "main.fce06926.css.map": "/static/css/main.fce06926.css.map",
+    "main.30610086.js.map": "/static/js/main.30610086.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fce06926.css",
+    "static/js/main.30610086.js"
+  ]
+}
