@@ -27,7 +27,7 @@ ReactGA.initialize("G-CY452XJQ23");
 function App() {
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   return (
