@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.css'
+import ReactGA from 'react-ga';
 
 //Images
 import background from './images/background.png'
@@ -20,6 +21,9 @@ import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer'
 
 import resume from './Resumes/resume.pdf'
+
+const TRACKING_ID = "G-CY452XJQ23"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
 
