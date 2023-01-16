@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles.css'
-import ReactGA from 'react-ga';
 
 //Images
 import background from './images/background.png'
@@ -22,10 +21,14 @@ import Footer from './components/Footer/Footer'
 
 import resume from './Resumes/resume.pdf'
 
-const TRACKING_ID = "G-CY452XJQ23"; // OUR_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
+import ReactGA from "react-ga";
+ReactGA.initialize("G-CY452XJQ23");
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <body>
