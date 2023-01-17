@@ -26,10 +26,6 @@ ReactGA.initialize("G-C17KTPET1R");
 
 function App() {
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
-
   return (
     <body>
       <div class="wrapper">
