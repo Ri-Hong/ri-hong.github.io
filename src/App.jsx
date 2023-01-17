@@ -21,8 +21,8 @@ import Footer from './components/Footer/Footer'
 
 import resume from './Resumes/resume.pdf'
 
-import ReactGA from "react-ga";
-ReactGA.initialize("G-CY452XJQ23");
+import ReactGA from "react-ga4";
+ReactGA.initialize("G-C17KTPET1R");
 
 function App() {
 
