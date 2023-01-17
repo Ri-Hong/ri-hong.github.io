@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './styles.css'
 
 //Images
@@ -23,6 +23,7 @@ import resume from './Resumes/resume.pdf'
 
 import ReactGA from "react-ga4";
 ReactGA.initialize("G-C17KTPET1R");
+ReactGA.send("pageview");
 
 function App() {
 

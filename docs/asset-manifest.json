@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fce06926.css",
-    "main.js": "/static/js/main.cde0f250.js",
+    "main.js": "/static/js/main.21fd9857.js",
     "static/media/background.png": "/static/media/background.60a820e3594a156ecdb4.png",
     "static/media/smartDoorLock.png": "/static/media/smartDoorLock.3933c3917d8378dfa798.png",
     "static/media/foodtastic.png": "/static/media/foodtastic.003963bbc53daf3fa30a.png",
@@ -20,10 +20,10 @@
     "static/media/resume.pdf": "/static/media/resume.899ee5fa3da3dab0e391.pdf",
     "index.html": "/index.html",
     "main.fce06926.css.map": "/static/css/main.fce06926.css.map",
-    "main.cde0f250.js.map": "/static/js/main.cde0f250.js.map"
+    "main.21fd9857.js.map": "/static/js/main.21fd9857.js.map"
   },
   "entrypoints": [
     "static/css/main.fce06926.css",
-    "static/js/main.cde0f250.js"
+    "static/js/main.21fd9857.js"
   ]
 }
