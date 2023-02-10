@@ -19,14 +19,13 @@ import Experience from './components/Experience/Experience'
 import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer'
 
-import resume from './Resumes/resume.pdf'
+import resume from './Resumes/FrontendResume.pdf'
 
 import ReactGA from "react-ga4";
 ReactGA.initialize("G-C17KTPET1R");
 ReactGA.send("pageview");
 
 function App() {
-
   return (
     <body>
       <div class="wrapper">
